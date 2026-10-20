@@ -1,0 +1,12 @@
+# Your progress and anything your code writes. Never commit these.
+data/
+
+# Python
+__pycache__/
+*.pyc
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

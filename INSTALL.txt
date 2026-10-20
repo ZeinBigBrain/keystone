@@ -1,0 +1,139 @@
+KEYSTONE: HOW TO INSTALL AND RUN IT
+===================================
+
+Keystone is a coding course that runs on your own computer. It has four
+tracks: Python fundamentals, SQL and databases, Python for engineering, and
+back-end development. You work in your web browser, but nothing goes online
+and there's no account to create. Your progress is saved in a folder next to
+the app.
+
+It works on Windows 10 or 11, and on macOS 11 (Big Sur) or newer.
+
+
+WHAT YOU NEED
+-------------
+
+- The Keystone download. Get it from
+  https://github.com/ZeinBigBrain/keystone/archive/refs/heads/main.zip
+  (it saves as keystone-main.zip).
+- About 200 MB of free space (more if you install the engineering packages).
+- An internet connection the first time, ONLY if Python isn't installed yet,
+  or when you install the packages for the engineering and back-end tracks.
+  The rest works offline.
+
+You don't need to install Python yourself. If it's missing, the launcher
+offers to do it for you.
+
+
+WINDOWS
+-------
+
+1. Right-click keystone-main.zip and choose "Extract All...". Put it
+   somewhere you'll keep it, like your Documents folder. (Don't run it from
+   inside the zip without extracting, because progress can't be saved there.)
+
+2. Open the extracted "keystone-main" folder and double-click "start.bat".
+
+3. If Windows shows "Windows protected your PC", click "More info", then
+   "Run anyway". This appears because the file came from the internet.
+
+4. If Python isn't installed, a black window asks whether to install it.
+   Press Y. It installs Python 3.12 just for your user account (no admin
+   password needed) and takes a minute or two.
+
+5. Your browser opens on Keystone. Leave the black window open while you
+   study. When you've finished, close the black window (or press Ctrl+C in it).
+
+Next time, just double-click start.bat again.
+
+
+MAC
+---
+
+1. Double-click keystone-main.zip. It unzips into a "keystone-main" folder.
+   Move that folder somewhere you'll keep it, like Documents.
+
+2. Open the folder and double-click "start.command".
+
+3. The first time, macOS may say it "can't be opened because it is from an
+   unidentified developer". Right-click start.command, choose Open, then
+   click Open in the box that appears. If there's no Open button, go to
+   System Settings, then Privacy & Security, scroll down and click
+   "Open Anyway". You only do this once.
+
+4. If Python isn't installed, the Terminal window asks whether to install it.
+   Type y and press Return. It downloads Python 3.12 from python.org and asks
+   for the password you use to log in to the Mac.
+
+5. Your browser opens on Keystone. Leave the Terminal window open while you
+   study. Close it when you've finished.
+
+Next time, just double-click start.command again.
+
+
+THE EXTRA PACKAGES (ENGINEERING AND BACK-END TRACKS)
+---------------------------------------------------
+
+The Python and SQL tracks need nothing extra.
+
+- Python for engineering uses NumPy, pandas, matplotlib and SciPy. Open the
+  first lesson of that track ("Packages and pip") and click Install.
+- Back-end development uses FastAPI. Open the lesson "Installing FastAPI"
+  (chapter 5 of that track) and click Install.
+
+Both buttons only install what's missing, and need an internet connection.
+
+
+YOUR PROGRESS
+-------------
+
+Everything you do is saved in the "data" folder inside Keystone's folder:
+XP, finished lessons, streaks, and the code you've typed.
+
+- Backups: each time Keystone starts, it saves a copy of your progress in
+  data\backups (the last 30 copies are kept). If the progress file ever gets
+  damaged, Keystone loads the newest backup automatically.
+- Moving to another computer: copy the "data" folder into Keystone's
+  folder on the new computer.
+- Updating to a new version of Keystone: download it again from the same
+  link, extract it over the old folder and let it replace the files. The
+  download doesn't contain a "data" folder, so your progress isn't touched. Lessons you've already passed stay
+  passed. Any new lessons added before the point you've reached are marked
+  "catch-up" in the menu, and they're optional.
+
+
+IF SOMETHING GOES WRONG
+-----------------------
+
+"Python couldn't be installed automatically"
+    Your browser opens python.org. Download Python 3, run the installer and,
+    on Windows, tick "Add python.exe to PATH" on the first screen. Then start
+    Keystone again.
+
+The browser doesn't open
+    Look in the black (or Terminal) window for a line like
+    "Keystone is running at http://127.0.0.1:8765" and open that address
+    yourself.
+
+"Can't reach the Keystone server"
+    The black or Terminal window was closed. Start Keystone again.
+
+It says a port is busy
+    Keystone picks the next free one by itself and shows it in the window.
+
+A package install fails
+    Check your internet connection and click Install again. On a work
+    computer, a firewall may block it. Ask IT to allow pypi.org and
+    files.pythonhosted.org.
+
+Starting from scratch
+    On the home page, "Reset all progress" clears everything. A backup is
+    saved in data\backups first.
+
+
+UNINSTALLING
+------------
+
+Delete Keystone's folder. That removes the app and your progress. If the
+launcher installed Python for you and you don't want it any more, remove
+"Python 3.12" from your computer's list of installed apps.

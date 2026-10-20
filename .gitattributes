@@ -1,0 +1,5 @@
+# Keep line endings exactly as stored, so the launchers work after a
+# "Download ZIP" on any system.
+* text=auto eol=lf
+*.bat -text
+*.command text eol=lf
